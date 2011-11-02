@@ -1,12 +1,14 @@
 class PagesController < ApplicationController
+
   def home
-    print "tu jestem 1"
-     return "Boba loba from home'oba"
+    @title = "Home"
   end
 
   def contact
-    print "tu jestem 2"
-     return "Kicha micha out of contact'icha"
+    @title = "Contact"
   end
 
+  def about
+    @title = "About"
+  end
 end
